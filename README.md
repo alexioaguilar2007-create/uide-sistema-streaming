@@ -3,7 +3,7 @@
 Proyecto académico de Programación Orientada a Objetos — UIDE.
 
 **Autor:** Alexis Aguilar
-**Estado:** planificación inicial; implementación pendiente.
+**Estado:** planificación y primer avance de código; aplicación completa pendiente.
 
 ## Objetivo
 Diseñar una aplicación de consola en Go para administrar un catálogo de contenidos audiovisuales, usuarios y favoritos mediante módulos y funciones.
@@ -24,9 +24,14 @@ Diseñar una aplicación de consola en Go para administrar un catálogo de conte
 Biblioteca estándar: `fmt`, `encoding/json`, `os`, `strings` y `errors`. Cualquier dependencia adicional se documentará antes de incorporarse.
 
 ## Próximos pasos
-Definir estructuras y contratos de funciones, inicializar el módulo Go con la ruta del repositorio, implementar cada módulo y comprobar su funcionamiento con datos ficticios. El repositorio contiene por ahora únicamente la planificación.
+Definir estructuras y contratos de funciones, inicializar el módulo Go con la ruta del repositorio, implementar cada módulo y comprobar su funcionamiento con datos ficticios. El repositorio incluye la planificación y una primera función de catálogo.
 
 ## Referencias
 - https://go.dev/doc/tutorial/create-module
 - https://go.dev/doc/modules/layout
 - https://pkg.go.dev/std
+
+## Avance inicial de código
+El repositorio incluye un primer paquete de catálogo: la estructura `Titulo` y las funciones `Registrar` y `BuscarPorNombre`, con una prueba. La aplicación completa, los demás módulos y la persistencia siguen pendientes; este avance es una base para continuar el desarrollo.
+
+Para comprobar el paquete con Go instalado: `go test ./...`.
